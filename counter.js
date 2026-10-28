@@ -51,4 +51,23 @@ console.log(c)  */
 /* console.log("1"===String(1))//true */
 
 
+/*let name = [ "kumar", "thani" , "siva", "santhosh", "sudharsan", "praveen"]
+const newName = name.map((name,index) => {
+    return `index of this name is ${index} is ${name}`
+})
+console.log(newName)
+console.log(name)*/
+
+
+/*let name=[1,2,3,4,5]
+const num = name.filter((name,index)=>name%2===0)
+console.log(num)
+
+console.log(name)*/
+
+
+/*let arr =["a","b","c","d","e","f","g","h","i"]
+    const newArr = arr.reduce((acc,cur)=> acc+cur)
+    console.log(newArr)*/
+
 

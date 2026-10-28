@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>javascript counter</title>
+</head>
+<body>
+
+ <h2>Counter: <span id="count">0</span></h2>
+
+  <button id="increase">Increase +</button>
+  <button id="decrease">Decrease -</button>
+  <button id="multiply">Multiply *</button>
+  <button id="division">Division /</button>
+  <button id="reset">Reset</button>
+
+ <script>
+  let count = 0;
+            const inc = document.getElementById("increase");
+            function increase() {
+                count++;
+                document.getElementById("count").innerText = count;
+            }
+                inc.addEventListener('click', increase);
+
+
+            const dec = document.getElementById("decrease");
+            function decrease() {
+                count--;
+                document.getElementById("count").innerText = count;
+            }
+              dec.addEventListener('click', decrease);
+
+            
+            const mul = document.getElementById("multiply");
+            function multiply() {
+                count *= 2;
+                document.getElementById("count").innerText = count;
+            }
+            mul.addEventListener('click', multiply);
+
+
+            const div = document.getElementById("division");
+
+            function division() {
+                count /= 2;
+                document.getElementById("count").innerText = count;
+            }
+            div.addEventListener('click', division);
+
+
+
+            const resetButton = document.getElementById("reset");
+            function reset(){
+            count = 0;
+            document.getElementById("count").innerText = count;
+          }
+            resetButton.addEventListener('click', reset);
+
+
+        </script>
+    </body>
+</html>

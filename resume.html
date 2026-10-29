@@ -4,172 +4,141 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SIVAKALYAN S - Resume</title>
-    <img src="my-photo.jpg" alt="Profile Photo" class="profile-img">
     <style>
-        body { font-family: Arial, sans-serif; 
+        body { 
+            font-family: Arial, sans-serif; 
             line-height: 1.6;
-             margin: 40px; 
-             color: #333; 
-             max-width: 800px; }
+            margin: 40px; 
+            color: #333; 
+            max-width: 800px; 
+        }
         h1 { margin-bottom: 2px; }
         h2 { 
             padding-bottom: 4px; 
             margin-top: 25px;
             color: #0066cc;
-            font-size: 1.2em; }
-        .contact-info { margin-bottom: 20px; 
+            font-size: 1.2em; 
+        }
+        .contact-info { 
+            margin-bottom: 20px; 
             color: #555; 
-            font-size: 0.95em; }
+            font-size: 0.95em; 
+        }
         ul { margin: 5px 0; padding-left: 20px; }
         li { margin-bottom: 6px; }
         .profile-img {
-    float: right;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-left: 10px; /* Photo-kum text-kum naduvula gap tharum */
-    margin-bottom: 10px;     /* Keezha irukkura text-ku oru chinna gap tharum */
-}
+            float: right;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-left: 10px; 
+            margin-bottom: 10px;    
+        }
     </style>
 </head>
 <body>
+    <img src="my-photo.jpg" alt="Profile Photo" class="profile-img">
     <h1 id="name"></h1>
-    <div class="contact-info">
-        +91 996213813x | Chennai | shiva12ssse@gmail.com | LinkedIn: Sivakalyan S
-    </div>
+    <div class="contact-info" id="contact"></div>
 
     <h2>Objective</h2>
-    <p>Aspiring IT professional with a strong foundation in Python, HTML, and CSS, paired with practical technical skills in computer hardware and systems assembly. Seeking an opportunity to apply these problem-solving abilities and technical skills in a challenging growth-oriented environment.</p>
- 
+    <p id="objective"></p>
+
     <h2>Education</h2>
-    <ul id="education">
-        <li><strong>B.Tech. Information Technology</strong> | CGPA: 7.75 (6th sem)</li>
-        <li>S. A. Engineering College, Chennai-600077 (2023-2027)</li>
-        <li><strong>Higher Secondary Education</strong> | 61.2%</li>
-        <li>Velammal Vidyalaya - CBSE Paruthipattu, Chennai-600071 (2021-2023)</li>
-    </ul>
+    <ul id="education"></ul>
 
     <h2>Internship</h2>
-    <ul id="internship">
-        <li><strong>Arjun Vision Internship:</strong> Introduction to Cyber Security, focusing on core concepts like CIA triad, protecting digital systems, networks, programs, and data from attacks.</li>
-        <li><strong>Eagle-HiTech Softclou Pvt Ltd (June 2026):</strong> Cloud & OS Administration (configured and managed cloud instances on AWS) and Networking & Connectivity (implemented TCP/IP protocols, subnetting, and API routing).</li>
-    </ul>
+    <ul id="internship"></ul>
 
     <h2>Volunteer Experience</h2>
-    <ul id="Volunteer Experience">
-        <li>Walkathon Against Cyber Fraud, Government of Tamil Nadu (2025): Participated in the state-wide awareness walkathon.</li>
-    </ul>
+    <ul id="volunteer"></ul>
 
-    <h2> Projects </h2>
-    <ul id="Projects">
-        <li><strong>Cloud-Based Agro-Advisory & Intelligence System:</strong> Developed a cloud-based application to provide real-time farming advice using Flutter, Weather API, and Firebase.</li>
-        <li><strong>Task Management System:</strong> Developed a responsive web app using HTML, CSS, and React to help users organize daily goals.</li>
-    </ul>
+    <h2>Projects</h2>
+    <ul id="projects"></ul>
 
-    <h2> Certifications </h2>
-    <ul id="Certifications">
-
-        <li>Introduction to Generative AI - AWS Educate (badge)</li>
-        <li>Introduction to Python - Infosys Springboard</li>
-        <li>Linux Unhatched - Cisco</li>
-        <li>Full Stack Development - Beeja Academy</li>
-        <li>UI/UX - Vel Technologies</li>
-        <li>Python with MongoDB - Vel Technologies</li>
-    </ul>
+    <h2>Certifications</h2>
+    <ul id="certifications"></ul>
 
     <h2>Technical Skills</h2>
-    <ul id="technical-skills">
-        <li><strong>Programming Language:</strong> Python</li>
-        <li><strong>Web Development:</strong> HTML, CSS</li>
-        <li><strong>UI/UX Design:</strong> UI/UX design</li>
-        <li><strong>PC Building:</strong> PC Building</li>
-    </ul>
+    <ul id="technical-skills"></ul>
 
     <h2>Soft Skills</h2>
-    <ul id="soft-skills">
-    <p>Effective Communication, Leadership & Collaboration, Critical Thinking & Problem-Solving, Active Listening & Patience, Adaptability & Learning</p>
-    </ul>
+    <ul id="soft-skills"></ul>
 
     <h2>Languages</h2>
-    <ul id="languages">
-    <p>English, Tamil</p>
-    </ul>
+    <ul id="languages"></ul>
+
     <script>
+        const resume = {
+            name: "SIVAKALYAN S",
+            contact: "+91 996213813x | Chennai | shiva12ssse@gmail.com | LinkedIn: Sivakalyan S",
+            objective: "Aspiring IT professional with a strong foundation in Python, HTML, and CSS, paired with practical technical skills in computer hardware and systems assembly. Seeking an opportunity to apply these problem-solving abilities and technical skills in a challenging growth-oriented environment.",
+            education: [
+                { degree: "B.Tech. Information Technology", cgpa: "7.75 (6th sem)", college: "S. A. Engineering College, Chennai-600077 (2023-2027)" },
+                { degree: "Higher Secondary Education", cgpa: "61.2%", college: "Velammal Vidyalaya - CBSE Paruthipattu, Chennai-600071 (2021-2023)" }
+            ],
+            internship: [
+                { company: "Arjun Vision Internship", description: "Introduction to Cyber Security, focusing on core concepts like CIA triad, protecting digital systems, networks, programs, and data from attacks." },
+                { company: "Eagle-HiTech Softclou Pvt Ltd (June 2026)", description: "Cloud & OS Administration (configured and managed cloud instances on AWS) and Networking & Connectivity (implemented TCP/IP protocols, subnetting, and API routing)." }
+            ],
+            volunteer: [
+                { event: "Walkathon Against Cyber Fraud, Government of Tamil Nadu (2025)", description: "Participated in the state-wide awareness walkathon." }
+            ],
+            projects: [
+                { title: "Cloud-Based Agro-Advisory & Intelligence System", description: "Developed a cloud-based application to provide real-time farming advice using Dart, Weather API, and Firebase." },
+                { title: "Task Management System", description: "Developed a responsive web app using HTML, CSS, and React to help users organize daily goals." }
+            ],
+            certifications: [
+                "Introduction to Generative AI - AWS Educate (badge)",
+                "Introduction to Python - Infosys Springboard",
+                "Linux Unhatched - Cisco",
+                "Full Stack Development - Beeja Academy",
+                "UI/UX - Vel Technologies",
+                "Python with MongoDB - Vel Technologies"
+            ],
+            technicalSkills: [
+                "Programming Language: Python",
+                "Web Development: HTML, CSS",
+                "UI/UX Design: UI/UX design",
+                "PC Building: PC Building"
+            ],
+            softSkills: [
+                "Effective Communication",
+                "Leadership & Collaboration",
+                "Critical Thinking & Problem-Solving",
+                "Active Listening & Patience",
+                "Adaptability & Learning"
+            ],
+            languages: [
+                "English",
+                "Tamil"
+            ]
+        };
 
+        const name = document.getElementById("name");
+        const contact = document.getElementById("contact");
+        const objective = document.getElementById("objective");
+        const education = document.getElementById("education");
+        const internship = document.getElementById("internship");
+        const volunteer = document.getElementById("volunteer");
+        const projects = document.getElementById("projects");
+        const certifications = document.getElementById("certifications");
+        const technicalSkills = document.getElementById("technical-skills");
+        const softSkills = document.getElementById("soft-skills");
+        const languages = document.getElementById("languages");
 
-const resume={
-    name:"SIVAKALYAN S",
-    contact:"+91 996213813x | chennai",
-    objective:"Aspiring IT professional with a strong foundation in Python, HTML, and CSS, paired with practical technical skills in computer hardware and systems assembly. Seeking an opportunity to apply these problem-solving abilities and technical skills in a challenging growth-oriented environment.",
-    education:[
-        {degree:"B.Tech. Information Technology", cgpa:"7.75 (6th sem)", college:"S. A. Engineering College, Chennai-600077 (2023-2027)"},
-        {degree:"Higher Secondary Education", percentage:"61.2%", school:"Velammal Vidyalaya - CBSE Paruthipattu, Chennai-600071 (2021-2023)"}
-    ],
-    internship:[
-        {company:"Arjun Vision Internship", description:"Introduction to Cyber Security, focusing on core concepts like CIA triad, protecting digital systems, networks, programs, and data from attacks."},
-        {company:"Eagle-HiTech Softclou Pvt Ltd (June 2026)", description:"Cloud & OS Administration (configured and managed cloud instances on AWS) and Networking & Connectivity (implemented TCP/IP protocols, subnetting, and API routing)."}
-    ],
-    volunteer:[
-        {event:"Walkathon Against Cyber Fraud, Government of Tamil Nadu (2025)", description:"Participated in the state-wide awareness walkathon."}
-    ],
-    projects:[
-        {title:"Cloud-Based Agro-Advisory & Intelligence System", description:"Developed a cloud-based application to provide real-time farming advice using Flutter, Weather API, and Firebase."},
-        {title:"Task Management System", description:"Developed a responsive web app using HTML, CSS, and React to help users organize daily goals."}
-    ],
-    certifications:[
-        "Introduction to Generative AI - AWS Educate (badge)",
-        "Introduction to Python - Infosys Springboard",
-        "Linux Unhatched - Cisco",
-        "Full Stack Development - Beeja Academy",
-        "UI/UX - Vel Technologies",
-        "Python with MongoDB - Vel Technologies"
-    ],
-    technicalSkills:[
-        "Programming Language: Python",
-        "Web Development: HTML, CSS",
-        "UI/UX Design: UI/UX design",
-        "PC Building: PC Building"
-    ],
-    softSkills:[
-        "Effective Communication",
-        "Leadership & Collaboration",
-        "Critical Thinking & Problem-Solving",
-        "Active Listening & Patience",
-        "Adaptability & Learning"
-    ],
-    languages:[
-        "English",
-        "Tamil"
-    ],
-
-}
-    const name= document.getElementById("name");
-    const contact= document.getElementById("contact");
-    const objective= document.getElementById("objective");
-    const education= document.getElementById("education");
-    const internship= document.getElementById("internship");
-    const volunteer= document.getElementById("volunteer");
-    const projects= document.getElementById("projects");
-    const certifications= document.getElementById("certifications");
-    const technicalSkills= document.getElementById("technical-skills");
-    const softSkills= document.getElementById("soft-skills");
-    const languages= document.getElementById("languages");
-
-    name.innerHTML=resume.name;
-    contact.innerHTML=resume.contact;
-    objective.innerHTML=resume.objective;       
-    education.innerHTML=resume.education.map(edu=>`<li><strong>${edu.degree}</strong> | ${edu.cgpa} | ${edu.college}</li>`).join('');
-    internship.innerHTML=resume.internship.map(intern=>`<li><strong>${  intern.company}</strong>: ${intern.description}</li>`).join('');
-    volunteer.innerHTML=resume.volunteer.map(vol=>`<li><strong>${vol.event  }</strong>: ${vol.description}</li>`).join('');
-    projects.innerHTML=resume.projects.map(proj=>`<li><strong>${proj.title}</strong>: ${proj.description}</li>`).join('');
-    certifications.innerHTML=resume.certifications.map(cert=>`<li>${cert}</li>`).join('');
-    technicalSkills.innerHTML=resume.technicalSkills.map(skill=>`<li>${skill}</li>`).join('');
-    softSkills.innerHTML=resume.softSkills.map(skill=>`<li>${skill}</li>`).join('');
-    languages.innerHTML=resume.languages.map(lang=>`<li>${lang}</li>`).join('');
-    
-
-</script>
-
+        name.innerHTML = resume.name;
+        contact.innerHTML = resume.contact;
+        objective.innerHTML = resume.objective;       
+        education.innerHTML = resume.education.map(edu => `<li><strong>${edu.degree}</strong> | ${edu.cgpa} | ${edu.college}</li>`).join('');
+        internship.innerHTML = resume.internship.map(intern => `<li><strong>${intern.company}</strong>: ${intern.description}</li>`).join('');
+        volunteer.innerHTML = resume.volunteer.map(vol => `<li><strong>${vol.event}</strong>: ${vol.description}</li>`).join('');
+        projects.innerHTML = resume.projects.map(proj => `<li><strong>${proj.title}</strong>: ${proj.description}</li>`).join('');
+        certifications.innerHTML = resume.certifications.map(cert => `<li>${cert}</li>`).join('');
+        technicalSkills.innerHTML = resume.technicalSkills.map(skill => `<li>${skill}</li>`).join('');
+        softSkills.innerHTML = resume.softSkills.map(skill => `<li>${skill}</li>`).join('');
+        languages.innerHTML = resume.languages.map(lang => `<li>${lang}</li>`).join('');
+    </script>
 </body>
 </html>
